@@ -1,31 +1,24 @@
+<script>/* 项目入口组件 */</script>
+
+
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+        <!-- 测试组件 -->
+        <div>
+        <!-- 测试按钮 -->       
+        <el-button type="primary">测试按钮</el-button>
+        </div>
 </template>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-}
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+<script>
+// 项目入口 组件实例
+export default {
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+};
+</script>
+
+
+<style scoped lang="less">
+// 项目入口组件样式
+
 </style>
