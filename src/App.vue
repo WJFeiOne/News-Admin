@@ -2,11 +2,10 @@
 
 
 <template>
-        <!-- 测试组件 -->
-        <div>
-        <!-- 测试按钮 -->       
-        <el-button type="primary">测试按钮</el-button>
-        </div>
+    <!-- 入口组件 -->
+    <div>
+        <router-view></router-view>
+    </div>
 </template>
 
 
@@ -20,5 +19,20 @@ export default {
 
 <style scoped lang="less">
 // 项目入口组件样式
+* {
+    margin: 0;            // 初始外边距
+    padding: 0;           // 初始内边距
+}
 
+a {
+    color: inherit;       // 初始化a标签
+}
+
+ul,li,ol {
+    list-style: none;     // 初始化列表样式
+}
+
+em,i {
+    font-style: normal;   // 初始化字体样式标签
+}
 </style>
