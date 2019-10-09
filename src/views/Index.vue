@@ -57,7 +57,7 @@
                 <!-- 管理员头像 -->
                 <span>{{ user.user.nickname }}</span>
                 <!-- 退出按钮 -->
-                <span>退出</span>
+                <span @click="handleLogut" style="cursor:pointer">退出</span>
             </el-header>
             <!-- 子页面显示的内容 -->
             <el-main>
@@ -119,6 +119,22 @@ export default {
             })
             // 返回拼接后 的面包屑导航数据
             return arr.join(" / ");
+        }
+    },
+
+    // 指定 组件事件
+    methods:{
+        // 点击 退出登录
+        handleLogut(){
+            // 弹出 退出登录确认窗口
+            this.$confirm('确定退出','提示',{
+                confimButtonText:'确定',  // 确定按钮
+                cancelbuttonText:'取消',  // 取消按钮
+                type:'warning'            // 提示图标
+            }).then(()=>{
+                localStorage.removeItem('user'); // 删除本地 用户信息
+                this.$router.push("/login")      // 跳转到 登录页面
+            }) 
         }
     }
 };
