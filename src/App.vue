@@ -17,7 +17,7 @@ export default {
 </script>
 
 
-<style scoped lang="less">
+<style lang="less">
 // 项目入口组件样式
 * {
     margin: 0;            // 初始外边距
@@ -26,6 +26,7 @@ export default {
 
 a {
     color: inherit;       // 初始化a标签
+    text-decoration: none;// 初始化a标签文本装饰
 }
 
 ul,li,ol {
