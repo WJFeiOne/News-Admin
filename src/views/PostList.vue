@@ -95,6 +95,12 @@ export default {
 
     // 指定 组件事件
     methods: {
+        // 点击 编辑跳转
+        handleEdit(index, row) {
+            // 跳转 到编辑页
+            this.$router.push("/post_edit/" + row.id);
+        },
+
         // 关闭或者 打开文章
         handleDelete(index, row) {
             // 请求 文章打开状态 数据
